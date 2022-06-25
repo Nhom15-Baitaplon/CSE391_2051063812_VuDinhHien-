@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Hàng</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+</head>
+<body>
+  <div class="sticky-top">
+    <div class="container-fluid bg-success ">
+      <div class="container-xxl">
+        <div class="row p-1 text-light">
+          <div class="col-md-8 d-none d-lg-block">
+            <i class="bi bi-geo-alt"></i> Lô B44-16 khu Geleximco Lê Trọng Tấn,
+            Dương Nội, Hà Đông, Hà Nội
+          </div>
+
+          <div class="col-lg-4 d-sm-block text-end">
+            Tỉ giá hôm nay : 3820 VNĐ
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark ">
+      <div class="container-xxl">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-xxl">
+            <a href="/TrangChu.html" class="navbar-brand">
+              <img
+                src="/images/247442372_2463989897079255_2358355523706916736_n.jpg"
+                alt=""
+                width="82"
+                height="70"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#main-nav"
+              aria-controls="main-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAv link-->
+            <div class="collapse navbar-collapse nav" id="main-nav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="/TrangChu.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="GioiThieu.html">Giới Thiệu </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="BangGia.html">Bảng Giá </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="webTintuc.html">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="DemowebLienHe.html">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="Giaohang.html">Giao Hàng</a>
+                </li>
+                
+                <li class="nav-item d-md-none ">
+                  <a href="https://xuatnhapkhau365.webmau68.com/"><i class="bi bi-facebook"></i></a>
+                  <h6 class="text-light">HOT LINE:0344517444</h6>
+                </li>
+              </ul>
+            </div>
+            <div class=" text-light d-none d-md-block ">
+              <a href="https://xuatnhapkhau365.webmau68.com/"><i class="bi bi-facebook"></i></a>
+              <h6>HOT LINE:0344517444</h6>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+    
+  <div class="container-fluid bg-light mb-5 " style="height: 470px;">
+    <div class="container-xxl  text-center text-dark">
+      <strong>Giao Hàng</strong>
+      <p class="border-success border-bottom border-5">
+        <em></em>
+      </p>     
+     
+      <form class="form-group" action="/Admin.html"> 
+      <div class="col-xs-3">
+        <label class="form-label" >Họ và tên </label>
+        <input type="text" class=""  id="hovaten1">
+      </div>
+     
+      <div class="col-xs-3">
+        <label class="form-label">Số điện thoại</label>
+        <input type="number" class=""   id="sdt1" >
+      </div>
+      <div class="col-xs-3">
+        <label class="form-label" >Email</label>
+        <input type="email" class=""  id="email1"  >
+      </div>
+      <div class="col-xs-3">
+        <label class="form-label" >Mã Hàng</label>
+        <input type="number" class=""   id="kienhang1">
+      </div>
+      <div class="col-xs-3">
+        <label class="form-label" >Tiền Hàng</label>
+        <input type="number" class=""   id="tienhang1" >
+      </div>
+      
+      <div class="col-xs-3">
+        <label class="form-label" >Cân Nặng</label>
+        <input type="number" class="" id="cannang1">
+      </div>
+      <div>
+        <button class="btn btn-success mt-2" onclick="buy()" >
+          Thanh Toán 
+        </button >
+      </div>
+      
+    </form>
+      
+
+    </div>
+  </div>
+
+
+
+    <div class="container-fluid mt-5 bg-dark text-light" >
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-sm-4 border-start border-success border-2  ">
+            <a href="/TrangChu.html" class="text-center">
+              <img
+                src="/images/247442372_2463989897079255_2358355523706916736_n.jpg"
+                alt=""
+                width="82"
+                height="70"
+              />
+            </a>
+            <p>Hãy đi xa hơn theo cách bạn muốn, đảm bảo hàng hóa an toàn là sứ mệnh của Xuất Nhập Khẩu 365.</p>
+            <a href="https://xuatnhapkhau365.webmau68.com/"><i class="bi bi-facebook"></i></a>
+          </div>
+          <div class="col-sm-4 border-start border-success border-2  ">
+            <strong>THÔNG TIN CÔNG TY</strong>
+            <p><i class="bi bi-geo-alt-fill"></i> Địa chỉ: Lô B44-16 khu Geleximco Lê Trọng Tấn, Dương Nội, Hà Đông, Hà Nội</p>
+            <p><i class="bi bi-telephone-fill"></i> Hotline: 0344517444</p>
+            <p><i class="bi bi-envelope-fill"></i> Email: tlong4510@gmail.com</p>  
+          </div>
+          <div class="col-sm-4 border-start border-success border-2   ">
+            <strong>ĐĂNG KÝ NHẬN TIN</strong>
+            <p>Đăng ký email để nhận được thông tin về các sự kiện và chương trình giảm giá sớm nhất!</p>
+            <input type="email" class="form-control"  placeholder="Email">
+            <button class="btn btn-success mt-2">
+              ĐĂNG KÝ 
+            </button>
+          </div>
+          </div>
+      </div>
+     </div>
+
+
+  
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/Giaohang.js"></script>
+</body>
+</html>

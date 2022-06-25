@@ -1,0 +1,15 @@
+
+ 
+label, input[type="submit"] {
+  display: inline-block;
+}
+ 
+input:focus:invalid {
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535;
+}
+ 
+input:focus:valid {
+  box-shadow: 0 0 5px #5cd053;
+  border-color: #28921f;
+}
